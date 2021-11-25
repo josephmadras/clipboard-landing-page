@@ -198,6 +198,9 @@ footer .social-media i:hover {
 }
 
 @media screen and (max-width: 767px) {
+  section.hero {
+    background-image: url("./images/bg-header-mobile.png");
+  }
   section.hero h1 {
     text-align: center;
     width: 85%;
