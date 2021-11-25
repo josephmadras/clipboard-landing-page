@@ -16,27 +16,97 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-      .attribution {
+      @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-size: 18px;
+        font-family: "Bai Jamjuree", sans-serif;
+        width: 100%;
+      }
+
+      main > * {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      main h1,
+      main h2,
+      main h3 {
+        color: hsl(210, 10%, 33%);
+      }
+
+      main p {
+        width: 40%;
+        text-align: center;
+        margin: 20px 0 50px 0;
+        color: hsl(201, 11%, 66%);
+      }
+      section.hero {
+        padding-bottom: 120px;
+        background-image: url("./images/bg-header-desktop.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      section.hero .copyright {
+        font-size: 10rem;
+        color: hsl(171, 66%, 44%);
+      }
+
+      section.hero h1 {
+        font-size: 2.5rem;
+        color: hsl(210, 10%, 33%);
+      }
+      .button-group button {
+        padding: 10px 20px;
+        border-radius: 20px;
+        border: none;
+        font-family: "Bai Jamjuree", sans-serif;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        color: #fff;
+      }
+
+      section.hero p {
+        width: 40%;
+        text-align: center;
+        margin: 20px 0 50px 0;
+        color: hsl(201, 11%, 66%);
+      }
+
+      .button-group .btn-ios {
+        background-color: hsl(171, 66%, 44%);
+      }
+      .button-group .btn-mac {
+        background-color: hsl(233, 100%, 69%);
+      }
+
+      /* .attribution {
         font-size: 11px;
         text-align: center;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
-      }
+      } */
     </style>
   </head>
   <body>
     <main>
       <section class="hero">
-        <div>&copy;</div>
+        <div class="copyright">&copy;</div>
         <h1>A history of everything you copy</h1>
         <p>
           Clipboard allows you to track and organize everything you copy.
           Instantly access your clipboard on all your devices.
         </p>
         <div class="button-group">
-          <button>Download for iOS</button>
-          <button>Download for Mac</button>
+          <button class="btn-ios">Download for iOS</button>
+          <button class="btn-mac">Download for Mac</button>
         </div>
       </section>
 
@@ -54,9 +124,11 @@
           <div class="options">
             <div>
               <h2>Quick Search</h2>
-              Easily search your snippets by content, category, web address,
-              application, and more.
-              <p></p>
+
+              <p>
+                Easily search your snippets by content, category, web address,
+                application, and more.
+              </p>
             </div>
             <div>
               <h2>iCloud Sync</h2>
@@ -140,8 +212,8 @@
           with iCloud and you’re ready to start adding to your clipboard.
         </p>
         <div class="button-group">
-          <button>Download for iOS</button>
-          <button>Download for Mac</button>
+          <button class="btn-ios">Download for iOS</button>
+          <button class="btn-mac">Download for Mac</button>
         </div>
       </section>
     </main>
