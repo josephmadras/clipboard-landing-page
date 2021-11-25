@@ -42,9 +42,9 @@
       }
 
       main p {
+        margin: 20px 0 50px 0;
         width: 40%;
         text-align: center;
-        margin: 20px 0 50px 0;
         color: hsl(201, 11%, 66%);
       }
       section.hero {
@@ -72,13 +72,6 @@
         color: #fff;
       }
 
-      section.hero p {
-        width: 40%;
-        text-align: center;
-        margin: 20px 0 50px 0;
-        color: hsl(201, 11%, 66%);
-      }
-
       .button-group .btn-ios {
         background-color: hsl(171, 66%, 44%);
       }
@@ -86,6 +79,37 @@
         background-color: hsl(233, 100%, 69%);
       }
 
+      section.keep-track {
+        margin-bottom: 120px;
+      }
+
+      section.keep-track .description {
+        display: flex;
+        width: 100%;
+      }
+
+      section.keep-track .description p {
+        text-align: left;
+        width: 70%;
+      }
+
+      section.keep-track .description img {
+        margin: 0 70px 0 -50px;
+      }
+
+      section.keep-track h1 {
+        font-size: 2rem;
+      }
+
+      section.keep-track h2 {
+        font-size: 1.3rem;
+      }
+
+      section.keep-track .options {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
       /* .attribution {
         font-size: 11px;
         text-align: center;
@@ -110,14 +134,14 @@
         </div>
       </section>
 
-      <section>
+      <section class="keep-track">
         <h1>Keep track of your snippets</h1>
         <p>
           Clipboard instantly stores any item you copy in the cloud, meaning you
           can access your snippets immediately on all your devices. Our Mac and
           iOS apps will help you organize everything.
         </p>
-        <div>
+        <div class="description">
           <div>
             <img src="./images/image-computer.png" alt="Computer image" />
           </div>
