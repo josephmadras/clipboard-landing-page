@@ -84,11 +84,11 @@ section.keep-track .description img {
   margin: 0 70px 0 -50px;
 }
 
-section.keep-track h1 {
-  font-size: 2rem;
+section h2 {
+  font-size: 1.8rem;
 }
 
-section.keep-track h2 {
+section.keep-track h3 {
   font-size: 1.3rem;
 }
 
@@ -137,7 +137,7 @@ footer {
 footer .logo-container {
   margin-top: -20px;
 }
-footer .logo-container h1 {
+footer .logo-container strong {
   color: hsl(171, 66%, 44%);
   font-weight: 400;
   font-size: 4rem;
@@ -220,9 +220,8 @@ footer .social-media i:hover {
     margin: 0 auto;
   }
 
-  section.keep-track h1 {
-    font-size: 2rem;
-    width: 80%;
+  section h2 {
+    width: 70%;
     text-align: center;
   }
   section.keep-track > p {
@@ -318,7 +317,8 @@ footer .social-media i:hover {
     margin: 30px 0;
   }
 
-  footer .logo-container h1 {
+  footer .logo-container > strong {
+    display: block;
     text-align: center;
   }
 
