@@ -78,9 +78,6 @@
         font-family: "Bai Jamjuree", sans-serif;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         color: #fff;
-        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-          rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
-          rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
       }
 
       .button-group button:hover {
@@ -188,6 +185,25 @@
       footer .links a:hover {
         color: hsl(171, 66%, 44%);
       }
+
+      footer .links .contact-us {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        color: green;
+      }
+      footer .links .privacy-policy {
+        grid-column: 2/3;
+        grid-row: 1/2;
+      }
+      footer .links .press-kit {
+        grid-column: 2/3;
+        grid-row: 2/3;
+      }
+      footer .links .install-guide {
+        grid-column: 3/4;
+        grid-row: 1/2;
+      }
+
       footer .social-media {
         display: flex;
         justify-content: center;
@@ -207,7 +223,134 @@
       }
 
       @media screen and (max-width: 767px) {
-        body {
+        section.hero h1 {
+          text-align: center;
+          width: 85%;
+        }
+
+        section.hero p {
+          width: 90%;
+        }
+
+        .button-group > * {
+          display: block;
+          margin-bottom: 20px;
+          width: 400px;
+        }
+
+        section.keep-track {
+          margin: 0 auto;
+        }
+
+        section.keep-track h1 {
+          font-size: 2rem;
+          width: 80%;
+          text-align: center;
+        }
+        section.keep-track > p {
+          width: 70%;
+        }
+
+        section.keep-track .description {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+        }
+
+        section.keep-track .description p {
+          text-align: center;
+          width: 100%;
+          padding: 10px 50px;
+        }
+        section.keep-track .description img {
+          width: 400px;
+          margin: 0 70px 0 50px;
+        }
+
+        section.keep-track .options {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-top: 50px;
+        }
+
+        section.access-clipboard h1 {
+          width: 50%;
+          text-align: center;
+          text-transform: capitalize;
+        }
+        section.access-clipboard p {
+          width: 100%;
+          padding: 0 70px;
+        }
+
+        section.access-clipboard img {
+          width: 400px;
+        }
+
+        section.supercharge-workflow > p {
+          width: 100%;
+          padding: 0 100px;
+        }
+
+        section.supercharge-workflow .list {
+          display: flex;
+          flex-direction: column;
+        }
+        section.supercharge-workflow .list p {
+          width: 100%;
+        }
+
+        section.supercharge-workflow .list > div {
+          width: 100%;
+        }
+
+        section.supercharge-workflow h3 {
+          margin: 20px 0;
+        }
+
+        div.companies {
+          display: flex;
+          flex-direction: column;
+        }
+
+        div.companies > * {
+          margin-bottom: 50px;
+        }
+
+        section.clipboard h1 {
+          padding: 0 100px;
+          text-align: center;
+        }
+
+        section.clipboard p {
+          width: 100%;
+          padding: 0 70px;
+        }
+
+        footer {
+          display: flex;
+          flex-direction: column;
+        }
+
+        footer .links {
+          list-style: none;
+          display: grid;
+          grid-template-columns: 1fr;
+          text-align: center;
+          margin: 30px 0;
+        }
+
+        footer .logo-container h1 {
+          text-align: center;
+        }
+
+        footer .social-media {
+          display: flex;
+          justify-content: space-around;
+        }
+        footer .social-media > div {
+          margin-right: 0;
         }
       }
 
@@ -270,7 +413,7 @@
         </div>
       </section>
 
-      <section>
+      <section class="access-clipboard">
         <h1>Access Clipboard anywhere</h1>
         <p>
           Whether you’re on the go, or at your computer, you can access all your
@@ -351,11 +494,15 @@
       </div>
 
       <ul class="links">
-        <li><a href="#faq">FAQs</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-        <li><a href="#privacy-policy">Privacy Policy</a></li>
-        <li><a href="#press-kit">Press Kit</a></li>
-        <li><a href="#install-guide">Install Guide</a></li>
+        <li class="faqs"><a href="#faq">FAQs</a></li>
+        <li class="contact-us"><a href="#contact">Contact Us</a></li>
+        <li class="privacy-policy">
+          <a href="#privacy-policy">Privacy Policy</a>
+        </li>
+        <li class="press-kit"><a href="#press-kit">Press Kit</a></li>
+        <li class="install-guide">
+          <a href="#install-guide">Install Guide</a>
+        </li>
       </ul>
 
       <div class="social-media">
