@@ -12,6 +12,13 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css"
+      integrity="sha512-3M00D/rn8n+2ZVXBO9Hib0GKNpkm8MSUU/e2VNthDyBYxKWG+BftNYYcuEjXlyrSO637tidzMBXfE7sQm0INUg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Frontend Mentor | Clipboard landing page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -46,6 +53,7 @@
         width: 40%;
         text-align: center;
         color: hsl(201, 11%, 66%);
+        line-height: 30px;
       }
       section.hero {
         padding-bottom: 120px;
@@ -70,6 +78,13 @@
         font-family: "Bai Jamjuree", sans-serif;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+          rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+          rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+      }
+
+      .button-group button:hover {
+        cursor: pointer;
       }
 
       .button-group .btn-ios {
@@ -114,7 +129,6 @@
       section.supercharge-workflow .list {
         display: flex;
         justify-content: space-around;
-        /* justify-content: space-between; */
         width: 80%;
         text-align: center;
       }
@@ -136,6 +150,67 @@
         justify-content: space-around;
         padding: 100px 120px;
       }
+
+      section.clipboard {
+        padding-bottom: 120px;
+      }
+
+      footer {
+        display: grid;
+        grid-template-columns: 20% 50% 30%;
+        background-color: #f5f6f8;
+        padding: 50px 100px;
+      }
+
+      footer .logo-container {
+        margin-top: -20px;
+      }
+      footer .logo-container h1 {
+        color: hsl(171, 66%, 44%);
+        font-weight: 400;
+        font-size: 4rem;
+      }
+
+      footer .links {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      footer .links li {
+        margin-bottom: 15px;
+      }
+      footer .links a {
+        text-decoration: none;
+        color: hsl(210, 10%, 33%);
+      }
+
+      footer .links a:hover {
+        color: hsl(171, 66%, 44%);
+      }
+      footer .social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      footer .social-media > div {
+        margin-right: 20px;
+      }
+
+      footer .social-media i {
+        color: hsl(210, 10%, 33%);
+      }
+      footer .social-media i:hover {
+        cursor: pointer;
+        color: hsl(171, 66%, 44%);
+      }
+
+      @media screen and (max-width: 767px) {
+        body {
+        }
+      }
+
       /* .attribution {
         font-size: 11px;
         text-align: center;
@@ -257,7 +332,7 @@
         </div>
       </div>
 
-      <section>
+      <section class="clipboard">
         <h1>Clipboard for iOS and Mac OS</h1>
         <p>
           Available for free on the App Store. Download for Mac or iOS, sync
@@ -271,11 +346,11 @@
     </main>
 
     <footer>
-      <div>
+      <div class="logo-container">
         <h1>&copy;</h1>
       </div>
 
-      <ul>
+      <ul class="links">
         <li><a href="#faq">FAQs</a></li>
         <li><a href="#contact">Contact Us</a></li>
         <li><a href="#privacy-policy">Privacy Policy</a></li>
@@ -284,10 +359,10 @@
       </ul>
 
       <div class="social-media">
-        <div><img src="./images/icon-facebook.svg" alt="Facecook icon" /></div>
-        <div><img src="./images/icon-twitter.svg" alt="Twitter icon" /></div>
+        <div><i class="fab fa-facebook-square fa-lg"></i></div>
+        <div><i class="fab fa-twitter fa-lg"></i></div>
         <div>
-          <img src="./images/icon-instagram.svg" alt="Instagram icon" />
+          <i class="fab fa-instagram fa-lg"></i>
         </div>
       </div>
     </footer>
